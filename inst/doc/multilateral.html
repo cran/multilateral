@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Multilateral</title>
+
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Multilateral</h1>
+
+
+
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>The multilateral package provides one user facing function, that is <code>multilateral()</code>. The user provides the necessary attributes of the dataset for the respective multilateral method.</p>
+<p>This returns a list object containing the continuous spliced index, each individual windows calculation (useful for diagnostics), and splicing information if applicable.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co">#devtools::install_github(&quot;MjStansfi/multilateral&quot;)</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">library</span>(multilateral)</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4">tpd_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> turvey<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb1-5" title="5">                          <span class="dt">id =</span> turvey<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb1-6" title="6">                          <span class="dt">price =</span> turvey<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb1-7" title="7">                          <span class="dt">quantity =</span> turvey<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb1-8" title="8">                          <span class="dt">splice_method =</span> <span class="st">&quot;geomean&quot;</span>,</a>
+<a class="sourceLine" id="cb1-9" title="9">                          <span class="dt">window_length =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb1-10" title="10">                          <span class="dt">index_method =</span> <span class="st">&quot;TPD&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">str</span>(tpd_index)</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co">#&gt; List of 3</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">#&gt;  $ index        :Classes &#39;data.table&#39; and &#39;data.frame&#39;:  48 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co">#&gt;   ..$ period   : Date[1:48], format: &quot;1970-01-31&quot; &quot;1970-02-28&quot; ...</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co">#&gt;   ..$ index    : num [1:48] 1 0.971 0.949 1.047 1.308 ...</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co">#&gt;   ..$ window_id: int [1:48] 1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co">#&gt;   ..- attr(*, &quot;.internal.selfref&quot;)=&lt;externalptr&gt; </span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="co">#&gt;  $ index_windows:Classes &#39;data.table&#39; and &#39;data.frame&#39;:  468 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="co">#&gt;   ..$ period   : Date[1:468], format: &quot;1970-01-31&quot; &quot;1970-02-28&quot; ...</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="co">#&gt;   ..$ index    : num [1:468] 1 0.971 0.949 1.047 1.308 ...</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="co">#&gt;   ..$ window_id: int [1:468] 1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="co">#&gt;   ..- attr(*, &quot;.internal.selfref&quot;)=&lt;externalptr&gt; </span></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="co">#&gt;  $ splice_detail:Classes &#39;data.table&#39; and &#39;data.frame&#39;:  35 obs. of  5 variables:</span></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="co">#&gt;   ..$ period                : Date[1:35], format: &quot;1971-02-28&quot; &quot;1971-03-31&quot; ...</span></a>
+<a class="sourceLine" id="cb2-15" title="15"><span class="co">#&gt;   ..$ latest_window_movement: num [1:35] 0.97 1.012 1.097 1.195 0.949 ...</span></a>
+<a class="sourceLine" id="cb2-16" title="16"><span class="co">#&gt;   ..$ revision_factor       : num [1:35] 1 1 1 1.01 1.02 ...</span></a>
+<a class="sourceLine" id="cb2-17" title="17"><span class="co">#&gt;   ..$ update_factor         : num [1:35] 0.972 1.013 1.099 1.205 0.966 ...</span></a>
+<a class="sourceLine" id="cb2-18" title="18"><span class="co">#&gt;   ..$ window_id             : int [1:35] 2 3 4 5 6 7 8 9 10 11 ...</span></a>
+<a class="sourceLine" id="cb2-19" title="19"><span class="co">#&gt;   ..- attr(*, &quot;.internal.selfref&quot;)=&lt;externalptr&gt; </span></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="co">#&gt;  - attr(*, &quot;class&quot;)= chr [1:2] &quot;list&quot; &quot;multilateral&quot;</span></a>
+<a class="sourceLine" id="cb2-21" title="21"><span class="co">#&gt;  - attr(*, &quot;params&quot;)=List of 6</span></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="co">#&gt;   ..$ index_method    : chr &quot;TPD&quot;</span></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="co">#&gt;   ..$ window_length   : num 13</span></a>
+<a class="sourceLine" id="cb2-24" title="24"><span class="co">#&gt;   ..$ splice_method   : chr &quot;geomean&quot;</span></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="co">#&gt;   ..$ chain_method    : NULL</span></a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="co">#&gt;   ..$ check_inputs_ind: logi TRUE</span></a>
+<a class="sourceLine" id="cb2-27" title="27"><span class="co">#&gt;   ..$ matched         : NULL</span></a></code></pre></div>
+</div>
+<div id="show-case-of-index-methods-you-can-apply" class="section level2">
+<h2>Show case of index methods you can apply</h2>
+<p>The package provides two lazily loaded datasets, they are ‘turvey’ and ‘synthetic_gfk’. The first dataset provides price and quantity information for products with a unique ID. The second dataset provides price and quantity information for products with a unique ID, however it also includes de-identified characteristics.</p>
+<p>Note for this example we do not provide a window length, therefore the index is calculated over the whole dataset.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">str</span>(turvey)</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co">#&gt; &#39;data.frame&#39;:    176 obs. of  4 variables:</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co">#&gt;  $ month    : Date, format: &quot;1970-01-31&quot; &quot;1970-01-31&quot; ...</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co">#&gt;  $ commodity: Factor w/ 5 levels &quot;Apples&quot;,&quot;Grapes&quot;,..: 1 2 3 1 2 3 1 2 3 1 ...</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="co">#&gt;  $ price    : num  1.14 2.48 1.3 1.17 2.75 1.25 1.17 5.07 1.21 1.4 ...</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co">#&gt;  $ quantity : int  3086 82 10266 3765 35 9656 4363 9 7940 4842 ...</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3">index_methods &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;TPD&quot;</span>,<span class="st">&quot;GEKS-T&quot;</span>,<span class="st">&quot;GEKS-J&quot;</span>,<span class="st">&quot;GEKS-F&quot;</span>)</a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5">start_run_time &lt;-<span class="st"> </span><span class="kw">Sys.time</span>()</a>
+<a class="sourceLine" id="cb4-6" title="6">turvey_multilats &lt;-<span class="st"> </span><span class="kw">lapply</span>(index_methods, <span class="cf">function</span>(index_method){</a>
+<a class="sourceLine" id="cb4-7" title="7">  </a>
+<a class="sourceLine" id="cb4-8" title="8">  </a>
+<a class="sourceLine" id="cb4-9" title="9">  temp_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> turvey<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb4-10" title="10">                             <span class="dt">id =</span> turvey<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb4-11" title="11">                             <span class="dt">price =</span> turvey<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb4-12" title="12">                             <span class="dt">quantity =</span> turvey<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb4-13" title="13">                             <span class="dt">index_method =</span> index_method)</a>
+<a class="sourceLine" id="cb4-14" title="14">  </a>
+<a class="sourceLine" id="cb4-15" title="15">  <span class="co">#For identification in plot</span></a>
+<a class="sourceLine" id="cb4-16" title="16">  temp_index<span class="op">$</span>index<span class="op">$</span>type &lt;-<span class="st"> </span>index_method</a>
+<a class="sourceLine" id="cb4-17" title="17">  </a>
+<a class="sourceLine" id="cb4-18" title="18">  <span class="kw">return</span>(temp_index<span class="op">$</span>index)  </a>
+<a class="sourceLine" id="cb4-19" title="19">})</a>
+<a class="sourceLine" id="cb4-20" title="20">end_run_time &lt;-<span class="st"> </span><span class="kw">Sys.time</span>()</a>
+<a class="sourceLine" id="cb4-21" title="21"></a>
+<a class="sourceLine" id="cb4-22" title="22"></a>
+<a class="sourceLine" id="cb4-23" title="23">turvey_multilats &lt;-<span class="st"> </span><span class="kw">do.call</span>(rbind,turvey_multilats)</a>
+<a class="sourceLine" id="cb4-24" title="24"></a>
+<a class="sourceLine" id="cb4-25" title="25">plot &lt;-<span class="st"> </span><span class="kw">ggplot</span>(turvey_multilats)<span class="op">+</span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> period, <span class="dt">y =</span> index, <span class="dt">colour =</span> type))</a>
+<a class="sourceLine" id="cb4-26" title="26"></a>
+<a class="sourceLine" id="cb4-27" title="27"><span class="kw">print</span>(plot)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>Below indicates the time taken to run all four index methods above, highlighting efficiency of calculation</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">print</span>(end_run_time<span class="op">-</span>start_run_time)</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="co">#&gt; Time difference of 8.334987 secs</span></a></code></pre></div>
+<div id="data-sources-with-features" class="section level3">
+<h3>Data sources with features</h3>
+<p><em>The above methods could also be applied to this dataset</em></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">str</span>(synthetic_gfk)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="co">#&gt; &#39;data.frame&#39;:    5509 obs. of  15 variables:</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="co">#&gt;  $ month_num : int  0 1 2 3 4 5 6 7 8 9 ...</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co">#&gt;  $ char11    : Factor w/ 10 levels &quot;brand_a&quot;,&quot;brand_b&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="co">#&gt;  $ char1     : num  10.6 10.6 10.6 10.6 10.6 10.6 10.6 10.6 10.6 10.6 ...</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="co">#&gt;  $ char2     : int  16006 16006 16006 16006 16006 16006 16006 16006 16006 16006 ...</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="co">#&gt;  $ char3     : Factor w/ 19 levels &quot;val_a&quot;,&quot;val_b&quot;,..: 18 18 18 18 18 18 18 18 18 18 ...</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="co">#&gt;  $ char4     : Factor w/ 4 levels &quot;val_a&quot;,&quot;val_b&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="co">#&gt;  $ char5     : Factor w/ 5 levels &quot;val_a&quot;,&quot;val_b&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="co">#&gt;  $ char6     : Factor w/ 88 levels &quot;FBOK6552&quot;,&quot;GR3000&quot;,..: 49 49 49 49 49 49 49 49 49 49 ...</span></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="co">#&gt;  $ char7     : Factor w/ 3 levels &quot;AAA&quot;,&quot;BBB&quot;,&quot;CCC&quot;: 3 3 3 3 3 3 3 3 3 3 ...</span></a>
+<a class="sourceLine" id="cb6-12" title="12"><span class="co">#&gt;  $ char8     : Factor w/ 2 levels &quot;100M&quot;,&quot;150D&quot;: 2 2 2 2 2 2 2 2 2 2 ...</span></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="co">#&gt;  $ char9     : Factor w/ 4 levels &quot;A100&quot;,&quot;A450&quot;,..: 3 3 3 3 3 3 3 3 3 3 ...</span></a>
+<a class="sourceLine" id="cb6-14" title="14"><span class="co">#&gt;  $ char10    : Factor w/ 5 levels &quot;abb&quot;,&quot;bbb&quot;,&quot;bhy&quot;,..: 5 5 5 5 5 5 5 5 5 5 ...</span></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="co">#&gt;  $ prodid_num: int  3 3 3 3 3 3 3 3 3 3 ...</span></a>
+<a class="sourceLine" id="cb6-16" title="16"><span class="co">#&gt;  $ quantity  : int  280 126 148 56 69 43 22 21 9 17 ...</span></a>
+<a class="sourceLine" id="cb6-17" title="17"><span class="co">#&gt;  $ value     : int  196420 85312 95920 38552 47397 28303 14812 13701 6304 10651 ...</span></a></code></pre></div>
+<p>Now we wrangle this into the necessary format, that is a unique observation for any given period.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3">synthetic_gfk &lt;-<span class="st"> </span>synthetic_gfk<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="st">  </span><span class="kw">group_by</span>(month_num,prodid_num)<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">quantity =</span> <span class="kw">sum</span>(quantity),</a>
+<a class="sourceLine" id="cb7-6" title="6">         <span class="dt">value =</span> <span class="kw">sum</span>(value))<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="st">  </span><span class="kw">ungroup</span>()<span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="st">  </span>unique</a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="co">#Calculate the unit value (price)</span></a>
+<a class="sourceLine" id="cb7-11" title="11">synthetic_gfk<span class="op">$</span>uv &lt;-<span class="st"> </span>synthetic_gfk<span class="op">$</span>value<span class="op">/</span>synthetic_gfk<span class="op">$</span>quantity</a>
+<a class="sourceLine" id="cb7-12" title="12"></a>
+<a class="sourceLine" id="cb7-13" title="13"><span class="co">#Extract data.frame containing features of interest</span></a>
+<a class="sourceLine" id="cb7-14" title="14">features &lt;-synthetic_gfk[,<span class="kw">grepl</span>(<span class="st">&quot;char&quot;</span>,<span class="kw">colnames</span>(synthetic_gfk))]</a></code></pre></div>
+<p>Once the dataframe is in the correct format we can run it through the main function with index_method set to ‘GEKS-IT’ and provide a features argument, containing the dataframe of features.</p>
+<p>Note GEKS-IT still requires a product id.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"></a>
+<a class="sourceLine" id="cb8-2" title="2">itrygeks_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> synthetic_gfk<span class="op">$</span>month_num,</a>
+<a class="sourceLine" id="cb8-3" title="3">                               <span class="dt">id =</span> synthetic_gfk<span class="op">$</span>prodid_num, </a>
+<a class="sourceLine" id="cb8-4" title="4">                               <span class="dt">price =</span> synthetic_gfk<span class="op">$</span>uv,</a>
+<a class="sourceLine" id="cb8-5" title="5">                               <span class="dt">quantity =</span> synthetic_gfk<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb8-6" title="6">                               <span class="dt">features =</span> features,</a>
+<a class="sourceLine" id="cb8-7" title="7">                               <span class="dt">splice_method =</span> <span class="st">&quot;geomean&quot;</span>,</a>
+<a class="sourceLine" id="cb8-8" title="8">                               <span class="dt">index_method =</span> <span class="st">&quot;GEKS-IT&quot;</span>)</a>
+<a class="sourceLine" id="cb8-9" title="9"></a>
+<a class="sourceLine" id="cb8-10" title="10"><span class="co">#For identification in plot</span></a>
+<a class="sourceLine" id="cb8-11" title="11">itrygeks_index<span class="op">$</span>index<span class="op">$</span>type &lt;-<span class="st"> &quot;itrygeks&quot;</span></a></code></pre></div>
+<p>Alternatively we could run a basic TDH model, which does not require a unique ID.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="co">#Note no unique product ID</span></a>
+<a class="sourceLine" id="cb9-3" title="3"></a>
+<a class="sourceLine" id="cb9-4" title="4">TDH_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> synthetic_gfk<span class="op">$</span>month_num,</a>
+<a class="sourceLine" id="cb9-5" title="5">                              <span class="dt">price =</span> synthetic_gfk<span class="op">$</span>uv,</a>
+<a class="sourceLine" id="cb9-6" title="6">                              <span class="dt">quantity =</span> synthetic_gfk<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb9-7" title="7">                              <span class="dt">features =</span> features,</a>
+<a class="sourceLine" id="cb9-8" title="8">                              <span class="dt">splice_method =</span> <span class="st">&quot;geomean&quot;</span>,</a>
+<a class="sourceLine" id="cb9-9" title="9">                              <span class="dt">index_method =</span> <span class="st">&quot;TDH&quot;</span>)</a>
+<a class="sourceLine" id="cb9-10" title="10"></a>
+<a class="sourceLine" id="cb9-11" title="11"></a>
+<a class="sourceLine" id="cb9-12" title="12"><span class="co">#For identification in plot</span></a>
+<a class="sourceLine" id="cb9-13" title="13">TDH_index<span class="op">$</span>index<span class="op">$</span>type &lt;-<span class="st"> &quot;TDH&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1">feature_indexes &lt;-<span class="st"> </span><span class="kw">rbind</span>(itrygeks_index<span class="op">$</span>index,TDH_index<span class="op">$</span>index)</a>
+<a class="sourceLine" id="cb10-2" title="2"></a>
+<a class="sourceLine" id="cb10-3" title="3">plot &lt;-<span class="st"> </span><span class="kw">ggplot</span>(feature_indexes)<span class="op">+</span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> period, <span class="dt">y =</span> index, <span class="dt">colour =</span> type))</a>
+<a class="sourceLine" id="cb10-4" title="4"></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="kw">print</span>(plot)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+</div>
+<div id="show-case-of-splice-methods-you-can-apply" class="section level2">
+<h2>Show case of splice methods you can apply</h2>
+<p>Here we introduce a window length and therefore some way to chain together the indexes. To do this and still meet the no revision constrant we ‘splice’ the individual windows together.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"></a>
+<a class="sourceLine" id="cb11-2" title="2">splice_methods &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;geomean&quot;</span>,<span class="st">&quot;geomean_short&quot;</span>,<span class="st">&quot;window&quot;</span>,<span class="st">&quot;movement&quot;</span>,<span class="st">&quot;half&quot;</span>)</a>
+<a class="sourceLine" id="cb11-3" title="3">turvey_splices &lt;-<span class="st"> </span><span class="kw">lapply</span>(splice_methods, <span class="cf">function</span>(splice_method){</a>
+<a class="sourceLine" id="cb11-4" title="4">  </a>
+<a class="sourceLine" id="cb11-5" title="5">  </a>
+<a class="sourceLine" id="cb11-6" title="6">  temp_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> turvey<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb11-7" title="7">                             <span class="dt">price =</span> turvey<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb11-8" title="8">                             <span class="dt">id =</span> turvey<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb11-9" title="9">                             <span class="dt">quantity =</span> turvey<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb11-10" title="10">                             <span class="dt">window_length =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb11-11" title="11">                             <span class="dt">splice_method =</span> splice_method,</a>
+<a class="sourceLine" id="cb11-12" title="12">                             <span class="dt">index_method =</span> <span class="st">&quot;TPD&quot;</span>)</a>
+<a class="sourceLine" id="cb11-13" title="13">  </a>
+<a class="sourceLine" id="cb11-14" title="14">  temp_index<span class="op">$</span>index<span class="op">$</span>type &lt;-<span class="st"> </span>splice_method</a>
+<a class="sourceLine" id="cb11-15" title="15">  </a>
+<a class="sourceLine" id="cb11-16" title="16">  <span class="kw">return</span>(temp_index<span class="op">$</span>index)  </a>
+<a class="sourceLine" id="cb11-17" title="17">})</a>
+<a class="sourceLine" id="cb11-18" title="18"></a>
+<a class="sourceLine" id="cb11-19" title="19">turvey_splices &lt;-<span class="st"> </span><span class="kw">do.call</span>(rbind,turvey_splices)</a>
+<a class="sourceLine" id="cb11-20" title="20"></a>
+<a class="sourceLine" id="cb11-21" title="21">plot &lt;-<span class="st"> </span><span class="kw">ggplot</span>(turvey_splices)<span class="op">+</span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> period, <span class="dt">y =</span> index, <span class="dt">colour =</span> type))</a>
+<a class="sourceLine" id="cb11-22" title="22"></a>
+<a class="sourceLine" id="cb11-23" title="23"><span class="kw">print</span>(plot)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="retrospective-splicing-chained-indexes" class="section level2">
+<h2>Retrospective splicing (chained indexes)</h2>
+<p>Typical splicing of a multilateral index exists to enforce the no revision constraint for which most official price indexes follow. However this package allows for the user to provide a ‘chain_method’ rather than a ‘splice_method’. With this we are able to look at what the index would be if we used all information available as at the latest period.</p>
+<p>Note: depending on the position of the chaining, the series will be a different length.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"></a>
+<a class="sourceLine" id="cb12-2" title="2">chain_methods &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;geomean&quot;</span>,<span class="st">&quot;window&quot;</span>,<span class="st">&quot;movement&quot;</span>,<span class="st">&quot;half&quot;</span>)</a>
+<a class="sourceLine" id="cb12-3" title="3">turvey_chains &lt;-<span class="st"> </span><span class="kw">lapply</span>(chain_methods, <span class="cf">function</span>(chain_method){</a>
+<a class="sourceLine" id="cb12-4" title="4">  </a>
+<a class="sourceLine" id="cb12-5" title="5">  </a>
+<a class="sourceLine" id="cb12-6" title="6">  temp_index &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> turvey<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb12-7" title="7">                             <span class="dt">price =</span> turvey<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb12-8" title="8">                             <span class="dt">id =</span> turvey<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb12-9" title="9">                             <span class="dt">quantity =</span> turvey<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb12-10" title="10">                             <span class="dt">window_length =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb12-11" title="11">                             <span class="co"># splice_method = splice_method,</span></a>
+<a class="sourceLine" id="cb12-12" title="12">                             <span class="dt">chain_method =</span> chain_method,</a>
+<a class="sourceLine" id="cb12-13" title="13">                             <span class="dt">index_method =</span> <span class="st">&quot;TPD&quot;</span>)</a>
+<a class="sourceLine" id="cb12-14" title="14">  </a>
+<a class="sourceLine" id="cb12-15" title="15">  temp_index<span class="op">$</span>index<span class="op">$</span>type &lt;-<span class="st"> </span>chain_method</a>
+<a class="sourceLine" id="cb12-16" title="16">  </a>
+<a class="sourceLine" id="cb12-17" title="17">  <span class="kw">return</span>(temp_index<span class="op">$</span>index)  </a>
+<a class="sourceLine" id="cb12-18" title="18">})</a>
+<a class="sourceLine" id="cb12-19" title="19"></a>
+<a class="sourceLine" id="cb12-20" title="20">turvey_chains &lt;-<span class="st"> </span><span class="kw">do.call</span>(rbind,turvey_chains)</a>
+<a class="sourceLine" id="cb12-21" title="21"></a>
+<a class="sourceLine" id="cb12-22" title="22"></a>
+<a class="sourceLine" id="cb12-23" title="23">plot &lt;-<span class="st"> </span><span class="kw">ggplot</span>()<span class="op">+</span></a>
+<a class="sourceLine" id="cb12-24" title="24"><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> period, <span class="dt">y =</span> index, <span class="dt">colour =</span> <span class="st">&quot;chain&quot;</span>), <span class="dt">data =</span> turvey_chains[turvey_chains<span class="op">$</span>type<span class="op">==</span><span class="st">&quot;geomean&quot;</span>])<span class="op">+</span></a>
+<a class="sourceLine" id="cb12-25" title="25"><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">x =</span> period, <span class="dt">y =</span> index, <span class="dt">colour =</span> <span class="st">&quot;splice&quot;</span>), <span class="dt">data =</span> turvey_splices[turvey_splices<span class="op">$</span>type<span class="op">==</span><span class="st">&quot;geomean&quot;</span>])<span class="op">+</span></a>
+<a class="sourceLine" id="cb12-26" title="26"><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Geomean chain compared to splice for turvey&quot;</span>)</a>
+<a class="sourceLine" id="cb12-27" title="27"></a>
+<a class="sourceLine" id="cb12-28" title="28"><span class="kw">print</span>(plot)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="why-this-package" class="section level2">
+<h2>Why this package</h2>
+<ul>
+<li>This package is fast relative to other available packages</li>
+<li>This package allows flexibility of user input</li>
+<li>This package has the flexibility to incorporate new methods if needed</li>
+<li>The methods available are those that Stats NZ are either using or intending to explore the use of</li>
+<li>Building own package brings transparency and understanding to methods and nature of the functions</li>
+</ul>
+<p>Below we compare the PriceIndices, IndexNumR, and multilateral package. We look at how you would calculate the same index.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">library</span>(multilateral)</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="kw">library</span>(IndexNumR)</a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="kw">library</span>(PriceIndices)</a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="co">#---------------------#multilateral package</span></a>
+<a class="sourceLine" id="cb13-6" title="6">turvey_multilateral &lt;-<span class="st"> </span><span class="kw">multilateral</span>(<span class="dt">period =</span> turvey<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb13-7" title="7">                                    <span class="dt">price =</span> turvey<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb13-8" title="8">                                    <span class="dt">quantity =</span> turvey<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb13-9" title="9">                                    <span class="dt">id =</span> turvey<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb13-10" title="10">                                    <span class="dt">window_length =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb13-11" title="11">                                    <span class="dt">splice_method =</span> <span class="st">&quot;geomean&quot;</span>,</a>
+<a class="sourceLine" id="cb13-12" title="12">                                    <span class="dt">index_method =</span> <span class="st">&quot;GEKS-F&quot;</span>,</a>
+<a class="sourceLine" id="cb13-13" title="13">                                    <span class="dt">check_inputs_ind =</span> T)</a>
+<a class="sourceLine" id="cb13-14" title="14"></a>
+<a class="sourceLine" id="cb13-15" title="15"><span class="co">#---------------------#PriceIndices package</span></a>
+<a class="sourceLine" id="cb13-16" title="16"></a>
+<a class="sourceLine" id="cb13-17" title="17"><span class="co">#Requires data.frame with specific colnames, and format of time</span></a>
+<a class="sourceLine" id="cb13-18" title="18"></a>
+<a class="sourceLine" id="cb13-19" title="19">turvey_mod &lt;-<span class="st"> </span>turvey<span class="op">%&gt;%</span><span class="kw">select</span>(<span class="dt">time =</span> month,</a>
+<a class="sourceLine" id="cb13-20" title="20">                              <span class="dt">prodID =</span> commodity,</a>
+<a class="sourceLine" id="cb13-21" title="21">                              <span class="dt">prices =</span> price,</a>
+<a class="sourceLine" id="cb13-22" title="22">                              <span class="dt">quantities =</span> quantity)</a>
+<a class="sourceLine" id="cb13-23" title="23"></a>
+<a class="sourceLine" id="cb13-24" title="24">turvey_priceindices &lt;-<span class="st"> </span><span class="kw">geks_splice</span>(turvey_mod, <span class="st">&quot;1970-01&quot;</span>, <span class="st">&quot;1973-12&quot;</span>, <span class="dv">13</span>, <span class="dt">splice =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">interval =</span> T)</a>
+<a class="sourceLine" id="cb13-25" title="25"></a>
+<a class="sourceLine" id="cb13-26" title="26"></a>
+<a class="sourceLine" id="cb13-27" title="27"><span class="co">#---------------------#IndexNumR package</span></a>
+<a class="sourceLine" id="cb13-28" title="28"></a>
+<a class="sourceLine" id="cb13-29" title="29"><span class="co">#Requires time to be a sequential numeric vector</span></a>
+<a class="sourceLine" id="cb13-30" title="30"></a>
+<a class="sourceLine" id="cb13-31" title="31">turvey &lt;-<span class="st"> </span>turvey<span class="op">%&gt;%</span><span class="kw">mutate</span>(<span class="dt">month_num =</span> <span class="kw">as.numeric</span>(<span class="kw">as.factor</span>(month)))</a>
+<a class="sourceLine" id="cb13-32" title="32"></a>
+<a class="sourceLine" id="cb13-33" title="33">turvey_IndexNumR &lt;-<span class="st"> </span><span class="kw">GEKSIndex</span>(turvey,</a>
+<a class="sourceLine" id="cb13-34" title="34">          <span class="dt">pvar =</span> <span class="st">&quot;price&quot;</span>,</a>
+<a class="sourceLine" id="cb13-35" title="35">          <span class="dt">qvar =</span> <span class="st">&quot;quantity&quot;</span>,</a>
+<a class="sourceLine" id="cb13-36" title="36">          <span class="dt">pervar =</span> <span class="st">&quot;month_num&quot;</span>,</a>
+<a class="sourceLine" id="cb13-37" title="37">          <span class="dt">prodID =</span> <span class="st">&quot;commodity&quot;</span>,</a>
+<a class="sourceLine" id="cb13-38" title="38">          <span class="dt">indexMethod =</span> <span class="st">&quot;fisher&quot;</span>,</a>
+<a class="sourceLine" id="cb13-39" title="39">          <span class="dt">window =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb13-40" title="40">          <span class="dt">splice =</span> <span class="st">&quot;mean&quot;</span>)</a></code></pre></div>
+<p>Note the multilateral function also has a ‘num_cores’ parameter for parallelisation. Because calculation over a given window is not dependent on another, the majority of the function computation time - calculating indexes over each window - can be done in parallel. This is only applicable when there is more than one window, and only becomes noticeably quicker when dealing with larger datasets (&gt;500k rows) as distributing to multiple cores has overheads. It is up to the user to find the correct balance.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">nrow</span>(big_data)</a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="co">#[1] 100000000</span></a>
+<a class="sourceLine" id="cb14-3" title="3"></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="kw">multilateral</span>(<span class="dt">period =</span> big_data<span class="op">$</span>month,</a>
+<a class="sourceLine" id="cb14-5" title="5">             <span class="dt">price =</span> big_data<span class="op">$</span>price,</a>
+<a class="sourceLine" id="cb14-6" title="6">             <span class="dt">quantity =</span> big_data<span class="op">$</span>quantity,</a>
+<a class="sourceLine" id="cb14-7" title="7">             <span class="dt">id =</span> big_data<span class="op">$</span>commodity,</a>
+<a class="sourceLine" id="cb14-8" title="8">             <span class="dt">window_length =</span> <span class="dv">13</span>,</a>
+<a class="sourceLine" id="cb14-9" title="9">             <span class="dt">splice_method =</span> <span class="st">&quot;geomean&quot;</span>,</a>
+<a class="sourceLine" id="cb14-10" title="10">             <span class="dt">index_method =</span> <span class="st">&quot;TPD&quot;</span>,</a>
+<a class="sourceLine" id="cb14-11" title="11">             <span class="dt">check_inputs_ind =</span> T,</a>
+<a class="sourceLine" id="cb14-12" title="12">             <span class="dt">num_cores =</span> <span class="dv">32</span>)</a></code></pre></div>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
